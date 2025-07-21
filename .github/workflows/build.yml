@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repo
@@ -35,4 +35,5 @@ jobs:
         with:
           name: kivy-apk
           path: bin/*.apk
+
 
