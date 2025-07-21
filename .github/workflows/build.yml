@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10  # o el que uses en tu entorno local
+          python-version: 3.10
 
       - name: Install dependencies
         run: |
@@ -26,7 +26,7 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython
 
-      - name: Install Android SDK components (AIDL)
+      - name: Install Android SDK components
         run: |
           yes | sdkmanager "platforms;android-31" "build-tools;31.0.0" "platform-tools" "tools"
 
